@@ -1,0 +1,182 @@
+/*
+ * by Frances Naty Go
+ * website: portfolio.goldlilys-media.com
+ */
+@import "compass";
+@import "mixins.scss";
+
+@media only screen and (max-width: 768px) {
+  #navbar {
+    padding-top: 3em;
+  }
+  .navbar-nav li a {
+    border-bottom: #2283a1 solid thin;
+  }
+  .navbar-toggle {
+    background: #444F59;
+    padding: 1em;
+    margin-top: 1em;
+    .icon-bar {
+      background: #fff;
+    }
+  }
+  footer {
+    .nav {
+      padding: 1em 0;
+    }
+    a:first-child {
+      padding-left: 0;
+    }
+  }
+}
+body {
+  color: #4a4a4a;
+  background: #ccc;
+  font-family: Arial, Georgia, Sans-Serif, Serif;
+  font-size: 15px;
+}
+h1, h2, h3 {
+  color: #3f3f3f;
+}
+.navbar {
+  min-height: 108px;
+}
+.navbar-brand {
+  padding-top: 1.2em;
+}
+ul, ol {
+  list-style: none;
+}
+#content img {
+  border: #fff solid 5px;
+  @include box-shadow(#bbb 5px 5px 5px);
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+#navbar {
+  ul {
+    @include menu;
+    @include rounded-border-left;
+    @include rounded-border-right;
+    margin-top: 2em;
+    border: #2283a1 solid thin;
+  }
+  .navbar-nav {
+    li {
+      a {
+        color: #fff;
+        border-right: #2283a1 solid thin;
+        padding: 15px 25px;
+      }
+      a:hover {
+        background: #444F59;
+      }
+    }
+    li:first-child a {
+      @include rounded-border-left;
+    }
+    li:last-child a {
+      border: none;
+      @include rounded-border-right;
+    }
+  }
+}
+#slideshow {
+  position: relative;
+  width: 100%;
+  min-height: 460px;
+  margin: 2em 0 2em;
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+#content {
+  background: #e3e3e3;
+  line-height: 2;
+  p{
+    padding: 2em 0;
+  }
+  .row {
+    padding: 1em 0 2em;
+    ul {
+      padding: 2em;
+      li {
+        list-style-image: url(../images/list.png);
+      }
+    }
+  }
+}
+#comments {
+  @include box-shadow(#aaa 2px 2px 5px);
+  background: #d8d8d8;
+  padding: 0.5em 0 1em;
+  line-height: 1.4;
+  .comment:nth-child(even) {
+    background: #c2d2de;
+  }
+  .msg {
+    font-size: 1.2em;
+    color: #555;
+    padding: 1em 1em 0.5em;
+  }
+  .author {
+    padding: 0 1em 1em 1.5em;
+  }
+}
+footer {
+  background: #ccc;
+  color: #4a4a4a;
+  padding: 30px 0;
+  .nav {
+    li {
+      display: inline-block;
+      a {
+        padding: 0 15px;
+        font-size: 15px;
+        border-right: #4a4a4a solid thin;
+      }
+      a:hover {
+        background: none;
+        text-decoration: underline;
+      }
+    }
+    li:last-child a {
+      border: none;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #slideshow {
+    min-height: 350px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  #slideshow {
+    min-height: 300px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #slideshow {
+    min-height: 250px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  #slideshow {
+    min-height: 200px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #slideshow {
+    min-height: 150px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #slideshow {
+    min-height: 100px;
+  }
+}

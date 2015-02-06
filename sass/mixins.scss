@@ -1,0 +1,13 @@
+@mixin menu {
+  @include background-image(linear-gradient(#99dbf7, #99dbf7 20%, #23b5f2));
+  font-size: 18px;
+  text-transform: uppercase;
+}
+@mixin rounded-border-left {
+  @include border-top-left-radius();
+  @include border-bottom-left-radius();
+}
+@mixin rounded-border-right {
+  @include border-top-right-radius();
+  @include border-bottom-right-radius();
+}
