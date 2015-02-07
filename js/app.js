@@ -17,6 +17,8 @@ $( document ).ready(function() {
     return b.timestamp - a.timestamp;
   });
 
+  var display = 0;
+
   $.each(comments, function() {
 
     var name = this.name;
@@ -30,10 +32,14 @@ $( document ).ready(function() {
     var year = date.getFullYear();
     var formatted = month + '/' + day + '/' + year;
 
-    $('#comments').append('<div class="comment"><div class="msg">"' + comment +
+    if (display < 5) {
+
+      $('#comments').append('<div class="comment"><div class="msg">"' + comment +
                         '"</div><div class="author"><strong>- ' + firstName +
                         ',</strong> ' + formatted +
                         '</div></div>');
+      display++;
+    }
   });
 
   // hide all images except for the first initially

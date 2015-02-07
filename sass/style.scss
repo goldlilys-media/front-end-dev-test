@@ -4,7 +4,11 @@
  */
 @import "compass";
 @import "mixins.scss";
-
+@media only screen and (max-width: 480px) {
+  #slideshow {
+    display: none;
+  }
+}
 @media only screen and (max-width: 768px) {
   #navbar {
     padding-top: 3em;
@@ -21,6 +25,7 @@
     }
   }
   footer {
+    text-align: center;
     .nav {
       padding: 1em 0;
     }
@@ -40,6 +45,7 @@ h1, h2, h3 {
 }
 .navbar {
   min-height: 108px;
+  border-top: #808080 solid 5px;
 }
 .navbar-brand {
   padding-top: 1.2em;
@@ -82,6 +88,9 @@ ul, ol {
     }
   }
 }
+.navbar-collapse {
+  box-shadow: none;
+}
 #slideshow {
   position: relative;
   width: 100%;
@@ -114,7 +123,7 @@ ul, ol {
 #comments {
   @include box-shadow(#aaa 2px 2px 5px);
   background: #d8d8d8;
-  padding: 0.5em 0 1em;
+  padding: 0 0 1em;
   line-height: 1.4;
   .comment:nth-child(even) {
     background: #c2d2de;
@@ -122,10 +131,12 @@ ul, ol {
   .msg {
     font-size: 1.2em;
     color: #555;
+    font-style: italic;
     padding: 1em 1em 0.5em;
   }
   .author {
     padding: 0 1em 1em 1.5em;
+    font-size: 15px;
   }
 }
 footer {
@@ -138,6 +149,7 @@ footer {
       a {
         padding: 0 15px;
         font-size: 15px;
+        color: #4a4a4a;
         border-right: #4a4a4a solid thin;
       }
       a:hover {
