@@ -151,35 +151,37 @@ ul, ol {
 /* line 99, ../sass/style.scss */
 #slideshow img {
   position: absolute;
+  background-size: cover;
+  background-position: center;
   left: 0;
   top: 0;
   width: 100%;
-  max-width: 100%;
+  height: 100%;
 }
 
-/* line 107, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
 #content {
   background: #e3e3e3;
   line-height: 2;
 }
-/* line 110, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 #content p {
   padding: 2em 0;
 }
-/* line 113, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 #content .row {
   padding: 1em 0 2em;
 }
-/* line 115, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 #content .row ul {
   padding: 2em;
 }
-/* line 117, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 #content .row ul li {
   list-style-image: url(../images/list.png);
 }
 
-/* line 123, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 #comments {
   -moz-box-shadow: #aaaaaa 2px 2px 5px;
   -webkit-box-shadow: #aaaaaa 2px 2px 5px;
@@ -188,83 +190,46 @@ ul, ol {
   padding: 0 0 1em;
   line-height: 1.4;
 }
-/* line 128, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 #comments .comment:nth-child(even) {
   background: #c2d2de;
 }
-/* line 131, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 #comments .msg {
   font-size: 1.2em;
   color: #555;
   font-style: italic;
   padding: 1em 1em 0.5em;
 }
-/* line 137, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 #comments .author {
   padding: 0 1em 1em 1.5em;
   font-size: 15px;
 }
 
-/* line 142, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 footer {
   background: #ccc;
   color: #4a4a4a;
   padding: 30px 0;
 }
-/* line 147, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 footer .nav li {
   display: inline-block;
 }
-/* line 149, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
 footer .nav li a {
   padding: 0 15px;
   font-size: 15px;
   color: #4a4a4a;
   border-right: #4a4a4a solid thin;
 }
-/* line 155, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 footer .nav li a:hover {
   background: none;
   text-decoration: underline;
 }
-/* line 160, ../sass/style.scss */
+/* line 162, ../sass/style.scss */
 footer .nav li:last-child a {
   border: none;
-}
-
-@media only screen and (max-width: 1200px) {
-  /* line 166, ../sass/style.scss */
-  #slideshow {
-    min-height: 350px;
-  }
-}
-@media only screen and (max-width: 960px) {
-  /* line 171, ../sass/style.scss */
-  #slideshow {
-    min-height: 300px;
-  }
-}
-@media only screen and (max-width: 800px) {
-  /* line 176, ../sass/style.scss */
-  #slideshow {
-    min-height: 250px;
-  }
-}
-@media only screen and (max-width: 640px) {
-  /* line 181, ../sass/style.scss */
-  #slideshow {
-    min-height: 200px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  /* line 186, ../sass/style.scss */
-  #slideshow {
-    min-height: 150px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  /* line 191, ../sass/style.scss */
-  #slideshow {
-    min-height: 100px;
-  }
 }

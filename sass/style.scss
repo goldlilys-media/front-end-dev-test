@@ -97,11 +97,13 @@ ul, ol {
   min-height: 460px;
   margin: 2em 0 2em;
   img {
-    position: absolute;
-    left: 0;
-    top: 0;
+    position:absolute;
+    background-size: cover;
+    background-position: center;
+    left:0;
+    top:0;
     width: 100%;
-    max-width: 100%;
+    height: 100%;
   }
 }
 #content {
@@ -160,35 +162,5 @@ footer {
     li:last-child a {
       border: none;
     }
-  }
-}
-@media only screen and (max-width: 1200px) {
-  #slideshow {
-    min-height: 350px;
-  }
-}
-@media only screen and (max-width: 960px) {
-  #slideshow {
-    min-height: 300px;
-  }
-}
-@media only screen and (max-width: 800px) {
-  #slideshow {
-    min-height: 250px;
-  }
-}
-@media only screen and (max-width: 640px) {
-  #slideshow {
-    min-height: 200px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  #slideshow {
-    min-height: 150px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  #slideshow {
-    min-height: 100px;
   }
 }
