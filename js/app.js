@@ -12,7 +12,7 @@ var comments = [
 
 $( document ).ready(function() {
 
-  /* sort comments by timestamp with newest first */
+  // sort comments by timestamp with newest first
   comments.sort(function(a, b){
     return b.timestamp - a.timestamp;
   });
@@ -21,16 +21,14 @@ $( document ).ready(function() {
 
   $.each(comments, function() {
 
-    var name = this.name;
-    var firstName = name.slice(0, name.indexOf(' '));
-
-    var comment = this.comment;
-
-    var date = new Date(this.timestamp * 1000);
-    var month = date.getMonth();
-    var day = date.getDay();
-    var year = date.getFullYear();
-    var formatted = month + '/' + day + '/' + year;
+    var name = this.name,
+        firstName = name.slice(0, name.indexOf(' ')),
+        comment = this.comment,
+        date = new Date(this.timestamp * 1000),
+        month = date.getMonth(),
+        day = date.getDay(),
+        year = date.getFullYear(),
+        formatted = month + '/' + day + '/' + year;
 
     if (display < 5) {
 
